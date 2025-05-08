@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Check Deposit</title>
+  <link rel="stylesheet" href="../../Style/Check_Deposit/Check_Deposit_Style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Check Deposit</h1>
+ 
+    <form id="depositForm">
+      <label>Upload Check Front:</label>
+      <input type="file" accept="image/*" onchange="previewImage(this, 'frontPreview')" required />
+      <img id="frontPreview" class="preview" />
+ 
+      <label>Upload Check Back:</label>
+      <input type="file" accept="image/*" onchange="previewImage(this, 'backPreview')" required />
+      <img id="backPreview" class="preview" />
+ 
+      <label>Account Number:</label>
+      <input type="text" id="accountNumber" placeholder="Auto-detected..." readonly />
+ 
+      <label>Amount:</label>
+      <input type="text" id="amount" placeholder="Auto-detected..." readonly />
+ 
+      <button type="button" onclick="simulateDetection()">Auto Detect Details</button>
+      <button type="submit">Submit Deposit</button>
+    </form>
+ 
+    <div id="confirmation" style="display:none;">
+      <h3>Check Submitted</h3>
+      <p>Front:</p><img id="frontResult" class="preview"/>
+      <p>Back:</p><img id="backResult" class="preview"/>
+    </div>
+  </div>
+ 
+  <script src="../../JS/Check_Deposit/Check_Deposit_JavaScript.js"></script>
+</body>
+</html>

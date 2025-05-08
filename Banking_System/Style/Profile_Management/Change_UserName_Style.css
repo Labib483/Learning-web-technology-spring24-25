@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+ 
+.header {
+  background-color: #0077c8;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+ 
+.form-container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+ 
+label {
+  font-size: 1rem;
+  color: #555;
+}
+ 
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+ 
+input[type="text"]:focus {
+  border-bottom: 2px solid #0077c8;
+}
+ 
+input[readonly] {
+  background: #eee;
+  color: #222;
+}
+ 
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+ 
+.cancel-btn, .submit-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 2px solid #0077c8;
+  cursor: pointer;
+  min-width: 100px;
+}
+ 
+.cancel-btn {
+  background: white;
+  color: #0077c8;
+}
+ 
+.submit-btn {
+  background: #0077c8;
+  color: white;
+  border: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="../../Style/Profile_Management/User_Profile_Edit_Style.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="app-header">
+    <h1>User Settings</h1>
+  </header>
+
+  <!-- Profile Info Section -->
+  <div class="profile-section">
+    <div class="avatar-container">
+      <!-- Placeholder for profile picture -->
+      
+    </div>
+    <div class="user-details">
+      <h2>Labib Hasan Bayzid</h2>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs-container">
+    <button id="myProfileTab" class="tab-button active">My Profile</button>
+    <button id="mySettingTab" class="tab-button">User Settings</button>
+  </div>
+
+  <!-- Action/Settings List -->
+  <div class="settings-container">
+<div class="setting-item clickable">
+  <span id="DP_Button">Upload Profile Picture</span>
+  <input type="file" id="UserPicture" accept="image/*" style="display: none;">
+</div>
+    <div id="Cng_Pass_Button" class="setting-item clickable">
+      <span>Change Password</span>
+    </div>
+    <div class="setting-item clickable">
+      <span id="UserName_Button">Change Username</span>
+    </div>
+   
+  </div>
+  <script src="../../JS/Profile_Management/User_Profile_Edit_JavaScript.js"></script>
+</body>
+</html>

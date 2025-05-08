@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f5f8;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  background-color: #0073c2;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.back-btn {
+  background-color: white;
+  color: #0073c2;
+  border: none;
+  padding: 8px 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+main {
+  padding: 20px;
+}
+ 
+.loan-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+ 
+.loan-card h2 {
+  margin: 0 0 10px;
+  color: #333;
+}
+ 
+.loan-card p {
+  margin: 0 0 15px;
+  color: #555;
+}
+ 
+.apply-btn {
+  background-color: #0073c2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+}

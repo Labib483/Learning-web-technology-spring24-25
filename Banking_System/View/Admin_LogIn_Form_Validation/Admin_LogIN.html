@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="../../Style/Admin_LogIn_Form_Validation/Admin_LogIN_Style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Admin Login</h2>
+    <form id="loginForm" novalidate>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required />
+        <small class="error-message">Please enter a valid email.</small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required minlength="6" />
+        <small class="error-message">Password must be at least 6 characters.</small>
+      </div>
+      <button type="submit">Login</button>
+      <div id="successMessage" class="success-message">Login successful!</div>
+    </form>
+  </div>
+ 
+  <script src="../../JS/Admin_LogIn_Form_Validation/Admin_LogIN_JavaScript.js"></script>
+</body>
+</html>

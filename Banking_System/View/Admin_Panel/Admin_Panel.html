@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="../../Style/Admin_Panel/Admin_Panel_Style.css" />
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <nav>
+      <button onclick="showSection('users')">User Management</button>
+      <button onclick="showSection('content')">Content Moderation</button>
+      <button onclick="showSection('settings')">System Settings</button>
+    </nav>
+  </header>
+ 
+  <main>
+    <section id="users" class="panel-section">
+      <h2>User Management</h2>
+      <input type="text" id="searchUser" placeholder="Search users..." onkeyup="filterUsers()" />
+      <table>
+        <thead>
+          <tr>
+            
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody id="userTable">
+          <tr><td><input type="checkbox" /></td><td>Labib</td><td>Labib@example.com</td><td>Admin</td></tr>
+          <tr><td><input type="checkbox" /></td><td>Hasan</td><td>Hasan@example.com</td><td>User</td></tr>
+          <tr><td><input type="checkbox" /></td><td>Bayzid</td><td>Bayzid@example.com</td><td>Editor</td></tr>
+        </tbody>
+      </table>
+      <button onclick="bulkDelete()">Delete Selected</button>
+    </section>
+ 
+  </main>
+ 
+  <script src="../../JS/Admin_Panel/Admin_Panel_JavaScript.js"></script>
+  
+</body>
+</html>

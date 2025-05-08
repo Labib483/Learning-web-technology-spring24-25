@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Change Username</title>
+  <link rel="stylesheet" href="../../Style/Profile_Management/Change_UserName_Style.css">
+</head>
+<body>
+  <div class="header">
+    <h2>Change Username</h2>
+  </div>
+ 
+  <form class="form-container" id="usernameForm">
+    <label for="oldUsername">Enter Old Username</label>
+    <input type="text" id="oldUsername" value="LabibHasanBayzid" readonly>
+ 
+    <label for="newUsername">Enter New Username</label>
+    <input type="text" id="newUsername" placeholder="Enter New Username">
+ 
+    <label for="confirmUsername">Confirm Username</label>
+    <input type="text" id="confirmUsername" placeholder="Confirm Username">
+ 
+    <div class="button-group">
+      <button id="Cancel_btn" type="button" class="cancel-btn">Cancel</button>
+      <button type="submit" class="submit-btn">Submit</button>
+    </div>
+  </form>
+ 
+  <script src="../../JS/Profile_Management/Change_UserName_JavaScript.js"></script>
+</body>
+</html>

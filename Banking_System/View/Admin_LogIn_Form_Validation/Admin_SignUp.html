@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bank Admin Sign-Up</title>
+  <link rel="stylesheet" href="../../Style/Admin_LogIn_Form_Validation/Admin_SignUp_Style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Bank Admin Sign-Up</h2>
+    <form id="signupForm" novalidate>
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" required>
+        <small class="error-message">Full Name is required.</small>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required>
+        <small class="error-message">Enter a valid email.</small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password (min 6 chars)</label>
+        <input type="password" id="password" required minlength="6">
+        <small class="error-message">Password must be at least 6 characters.</small>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" required>
+        <small class="error-message">Passwords do not match.</small>
+      </div>
+      <button type="submit">Register</button>
+      <div id="successMessage" class="success-message">Registration successful!</div>
+    </form>
+  </div>
+ 
+  <script src="../../JS/Admin_LogIn_Form_Validation/Admin_SignUp_JavaScript.js"></script>
+</body>
+</html>

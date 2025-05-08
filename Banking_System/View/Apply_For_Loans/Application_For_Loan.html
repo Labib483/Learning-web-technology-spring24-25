@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loan Application</title>
+  <link rel="stylesheet" href="../../Style/Apply_For_Loans/Application_For_Loan_Style.css" />
+</head>
+<body>
+  <header>
+    <h1>Apply for Loan</h1>
+  </header>
+ 
+  <main>
+    <form id="loanForm">
+      <label>Name of the Applicant *</label>
+      <input type="text" name="name" required />
+ 
+      <label>Mobile Number *</label>
+      <input type="tel" name="mobile" pattern="[0-9]{11}" required />
+ 
+      <label>Type of Employment *</label>
+      <input type="text" name="employment" required />
+ 
+      <label>NID Number *</label>
+      <input type="text" name="nid" required />
+ 
+      <label>Email Address (Optional)</label>
+      <input type="email" name="email" />
+ 
+      <label>Date of Birth *</label>
+      <input type="date" name="dob" required />
+ 
+      <label>Gender *</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" required /> Female</label>
+      </div>
+ 
+      <label>District *</label>
+      <input type="text" name="district" required />
+ 
+      <label>Monthly Income * (BDT)</label>
+      <input type="number" name="income" required />
+ 
+      <label>Desired Loan Amount * (BDT)</label>
+      <input type="number" name="loanAmount" required />
+ 
+      <label>TIN Number</label>
+      <input type="text" name="tin" />
+ 
+      <label>Tax Return Acknowledgement Slip No.</label>
+      <input type="text" name="taxSlip" />
+ 
+      <div class="buttons">
+        <button type="submit" class="submit">APPLY NOW</button>
+        <button type="button" class="cancel" onclick="cancelForm()">CANCEL</button>
+      </div>
+    </form>
+  </main>
+ 
+  <script src="../../JS/Apply_For_Loans/Application_For_Loan_JavaScript.js"></script>
+</body>
+</html>
